@@ -1,0 +1,81 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  --primary-100: #98B8FA;
+  --primary-200: #3978F8;
+  --primary-300: #1B56D0;
+  
+  --secondary-100: #DCF7FC;
+  --secondary-200: rgb(73, 151, 141);
+  
+  --accent-100: #A383F2;
+  --accent-200: #6A42D2;
+  
+  --darktone-100: #202543;
+  --darktone-200: #151725;
+
+  --linear-grand: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  --linear-grand-purple: linear-gradient(180deg, rgba(247,247,247,0) 0%, rgba(107,70,193,1) 55%);
+}
+
+
+section {
+  min-height: 200px;
+}
+
+.wave {
+  position: relative;
+  background: #1B56D0;
+}
+
+.purpura {
+  background-color: var(--linear-grand-purple);
+}
+
+.wave:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: url(/images/waves-png-199614.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* data css carousel - Page Fourt */
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+.carousel-item {
+  -webkit-transition: opacity 0.6s ease-out;
+  transition: opacity 0.6s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+  display: block;
+}
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+  color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+}

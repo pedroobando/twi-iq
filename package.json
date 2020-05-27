@@ -1,0 +1,42 @@
+{
+  "name": "twi-server",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build:css": "postcss src/tailwind.css -o src/html/assets/css/style.css",
+    "build:twi": "npx tailwind build src/tailwind.css -o src/html/assets/css/style.css",
+    "start": "node dist/index.js",
+    "update-dep": "yarn upgrade-interactive --latest"
+  },
+  "keywords": [
+    "express",
+    "babel",
+    "nodemon"
+  ],
+  "author": "Pedro Obando",
+  "description": "",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "@fullhuman/postcss-purgecss": "^2.2.0",
+    "autoprefixer": "^9.8.0",
+    "babel-preset-minify": "^0.5.1",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.0.0",
+    "nodemon": "^2.0.4",
+    "postcss-import": "^12.0.1",
+    "tailwindcss": "^1.4.6"
+  }
+}

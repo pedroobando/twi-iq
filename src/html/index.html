@@ -1,0 +1,307 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <title>Proyecto  - Tailwind</title>
+
+  <!-- Font Awesome if you need it
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  -->
+  <link href="http://localhost:3000/css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+
+
+  
+</head>
+<body class="leading-normal tracking-normal text-gray-800 bg-white" style="font-family: 'Source Sans Pro', sans-serif;">
+
+  <!--Nav-->
+  <nav id="header" class="fixed w-full z-30 top-0">
+
+    <div class="w-full bg-gray-200 mx-auto p-0 mt-0 py-2 sm:px-16 flex flex-wrap items-center justify-between leading-tight">
+
+      <div class="block lg:hidden pr-4">
+        <button id="nav-toggle" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
+          <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+
+      <div class="lg:pl-4">
+        <a class="no-underline hover:no-underline font-extrabold text-2xl lg:text-4xl"  href="#"> 
+          <img class="inline-block" src="/images/iq.png" alt="IQ">
+          <span class="-ml-1 hidden lg:inline-block">THINK</span>           
+        </a>
+      </div>
+
+      <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <li class="mr-3">
+            <a class="inline-block py-2 px-4 text-black no-underline" href="#">What we do</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Our work</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">About</a>
+          </li>
+        </ul>
+        <button id="navAction" class="mx-auto uppercase lg:mx-0 hover:text-blue-500 text-blue-800 font-bold mt-4 lg:mt-0 py-1 px-8 opacity-75 border-2 border-blue-500 border-solid">Let's talk</button>
+      </div>
+    </div>
+    
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+  </nav>
+
+  <!--Page Home / Boost-->
+  <div class="pt-24">
+    <div class="container mx-auto px-16 flex flex-wrap flex-col md:flex-row content-between items-center">
+      <!--Left Col-->
+      <div class="flex flex-col w-full lg:w-1/2 justify-center items-start text-center lg:text-left">
+        <!-- <p class="uppercase tracking-loose w-full">What business are you?</p> -->
+        <h1 class="hidden sm:inline my-4 font-bold leading-tight text-7xl">
+          <span class="inline">
+            <span class="inline-block z-30 bg-blue-300 mt-4" style="width: 214px; height: 9px;"></span>
+            <span class="inline-block z-40 pb-0 -mb-10" style="margin-left: -230px;">Boost</span>
+          </span>
+           your business IQ
+        </h1>
+        <h1 class="inline sm:hidden my-4 font-bold leading-none text-6xl">
+          <span class="inline">
+            <span class="inline-block z-30 bg-blue-300" style="width: 170px; height: 6px;"></span>
+            <span class="inline-block z-40 pb-0" style="margin-left: -180px;">Boost</span>
+          </span>
+           your business IQ
+        </h1>        
+        <p class="leading-normal mb-8 tracking-wider w-full text-2xl sm:text-3xl md:text-4xl lg:w-10/12">throwgh the magic of tech and the power of empathy.</p>
+        <button class="mx-auto lg:mx-0 hover:text-blue-500 text-2xl bg-white text-blue-600 font-bold border-blue-600 border-2 my-6 py-2 px-16 uppercase">Let's talk</button>
+      </div>
+      <!--Right Col-->
+      <div class="w-full lg:w-1/2 py-6 text-center">
+        <img class="w-full z-50 object-center" src="/images/work.png">
+      </div>
+    </div>
+  </div>
+
+  <!--Scroll Down-->
+  <div class="my-32 flex items-center justify-center">
+    <h1 class="text-xl font-bold inline-block" >
+      Scroll
+    </h1>
+    <span class="fill-current inline-block px-2">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path class="heroicon-ui" d="M11 18.59V3a1 1 0 0 1 2 0v15.59l5.3-5.3a1 1 0 0 1 1.4 1.42l-7 7a1 1 0 0 1-1.4 0l-7-7a1 1 0 0 1 1.4-1.42l5.3 5.3z"/></svg>
+    </span>      
+  </div>
+
+  <!--Page One / Boats-->
+  <div class="mt-48"> <!-- mt-24 -->
+    <div class="mx-auto lg:mx-8 bg-blue-600 rounded-none lg:rounded-b-lg flex flex-wrap flex-col-reverse lg:flex-row content-between items-center">
+      <!--Left Col-->
+      <div class="text-left mt-20 lg:mt-0 xl:-mt-10 px-6 md:px-8 lg:pl-20 w-full lg:w-1/2 flex flex-col items-start">
+        <h1 class="my-2 text-4xl md:text-5xl leading-none text-white ">
+          We integrate with your company to help you solve <span class="font-black">business</span> challenges.
+        </h1>
+        <p class="leading-normal text-base md:text-xl text-white my-4">
+          We align with your management to understand your objectives and then work closely with Marketing and Development teams within your organization to make things happen.
+        </p>
+        <button class="w-full lg:mx-0 my-6 py-2 text-xl md:text-2xl hover:text-blue-500 bg-transparent text-white font-bold border-white border-2">KNOW MORE</button>
+      </div>
+      <!--Right Col-->
+      <div class="w-9/12 lg:w-1/2">
+        <img class="w-full z-20 lg:object-fill -mb-12 -mt-20 md:-mt-40" src="/images/bote.png" alt="boat">
+      </div>
+
+    </div>
+  </div>
+
+  <!--Page Two / Clients-->
+  <div class="my-24">
+    <div class="text-center mb-3 mx-8 md:mx-4">
+      <h2 class="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Since 2007 we’ve worked with organizations around the world.</h2>
+    </div>
+    <div class="mx-auto md:mx-8 px-2 flex flex-wrap md:flex-row justify-between text-center">
+      <!--Center Col-->
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+        <div class="text-4xl md:text-5xl lg:text-6xl text-gray-600 w-1/2 md:w-3/12 my-4 font-bold">
+          Client
+        </div>
+
+    </div>
+  </div>
+
+  <!--Page Tree / Accordeon-->
+  <div class="my-24">
+    <div class=""> <!-- m-10 mx-auto sm:p-24 -->
+
+      <!-- Carousel Body -->
+      <div class="relative mx-auto lg:mx-10 rounded-lg block flex flex-col lg:flex-row md:items-stretch bg-transparent lg:bg-gray-200">
+        <div class="w-full pt-10 md:pt-10 lg:w-2/5 flex items-center bg-blue-600 lg:rounded-l-lg">
+          <div class="pl-10 lg:pr-2 lg:pl-20">
+            <h2 class="text-white pr-40 text-4xl md:text-5xl font-bold leading-none">Master Splinter</h2>
+            <p class="text-white text-xl mt-4">A powerful tool that helps provide the best technical service.</p>
+            <button class="hidden lg:inline mt-10 py-2 px-10 lg:px-16 mx-auto lg:mx-0 hover:text-blue-500 text-2xl bg-transparent text-white font-bold border-white border-2">KNOW MORE</button>
+          </div>
+        </div>
+        <div class="relative w-full lg:w-3/5 overflow-hidden md:rounded-r-lg" style="min-height: 484px;" >
+          <svg class="hidden lg:block absolute inset-y-0 h-full w-24 fill-current text-blue-600 -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="50,0 100,0 50,100 0,100" />
+          </svg>
+          <img class="absolute ml-10 lg:ml-0 inset-0 w-full h-full md:object-cover object-center" src="http://localhost:3000/images/tablet.png" alt="">
+          
+        </div>
+        <!-- <button class="block lg:hidden mt-10 py-2 w-auto text-2xl bg-transparent text-blue-500 font-bold border-blue-500 border-2">KNOW MORE</button> -->
+        <div class="mx-6">
+          <button class="block lg:hidden w-full my-6 py-2 text-xl md:text-2xl bg-transparent text-blue-500 font-bold border-blue-500 border-2">KNOW MORE</button>
+        </div>
+        
+
+        <button class="hidden lg:inline absolute top-0 mt-48 left-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -ml-6 focus:outline-none focus:shadow-outline">
+          <span class="block" style="transform: scale(-1);">&#x279c;</span>
+        </button>
+        <button class="hidden lg:inline absolute top-0 mt-48 right-0 bg-white rounded-full shadow-md h-12 w-12 text-2xl text-indigo-600 hover:text-indigo-400 focus:text-indigo-400 -mr-6 focus:outline-none focus:shadow-outline">
+          <span class="block" style="transform: scale(1);">&#x279c;</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!--Page Fourt / challenges-->
+  <div class="my-24">
+    <div class="mx-6 md:mx-10 flex flex-wrap">
+      <div class="w-full lg:w-2/5">
+        <h2 class="text-4xl md:text-6xl font-bold leading-none">
+          What type of
+          <span class="inline-block">
+            <img src="/images/pngocean.png" class="w-2/5 md:w-4/5 -mb-2"  alt="arms bram">
+          </span>
+          challenges can we help you with?
+        </h2>
+        <p class="text-xl md:text-2xl mt-8">
+          As digital partners integrated within your company, we can help your team tackle a variety of challenges:
+        </p>
+      </div>
+      <div class="w-full mt-8 lg:mt-0 lg:w-3/5 flex flex-row flex-wrap justify-between">
+        <article class="w-5/12 px-0 md:px-4 mx-2 mb-16">
+          <svg class="text-yellow-500 fill-current w-2/5 sm:w-1/3" viewBox="0 0 24 24"><path class="heroicon-ui" d="M19 10v6a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2c0-1.1.9-2 2-2v-6a2 2 0 0 1-2-2V7a1 1 0 0 1 .55-.9l8-4a1 1 0 0 1 .9 0l8 4A1 1 0 0 1 21 7v1a2 2 0 0 1-2 2zm-6 0h-2v6h2v-6zm4 0h-2v6h2v-6zm-8 0H7v6h2v-6zM5 7.62V8h14v-.38l-7-3.5-7 3.5zM5 18v2h14v-2H5z"/></svg>
+          <h3 class="text-2xl md:text-3xl font-bold" >Strategy</h3>
+          <p class="font-normal text-base md:text-lg">
+            Understand the context and evaluate your capabilities to identify opportunities, define objectives and make better decisions.
+          </p>
+          <h4 class="text-lg md:text-2xl font-bold mt-4">See more
+            <span class="text-yellow-500 -mb-2 fill-current inline-block">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"/></svg>
+            </span>
+          </h4>
+          
+        </article>
+        <article class="w-5/12 px-0 md:px-4 mx-2 mb-16">
+          <svg class="text-blue-500 fill-current w-2/5 sm:w-1/3" viewBox="0 0 24 24"><path class="heroicon-ui" d="M19 10v6a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2c0-1.1.9-2 2-2v-6a2 2 0 0 1-2-2V7a1 1 0 0 1 .55-.9l8-4a1 1 0 0 1 .9 0l8 4A1 1 0 0 1 21 7v1a2 2 0 0 1-2 2zm-6 0h-2v6h2v-6zm4 0h-2v6h2v-6zm-8 0H7v6h2v-6zM5 7.62V8h14v-.38l-7-3.5-7 3.5zM5 18v2h14v-2H5z"/></svg>
+          <h3 class="text-2xl md:text-3xl font-bold">Development</h3>
+          <p class="font-normal text-base md:text-lg">
+            Materialize concepts into tangible solutions and bring them through release and beyond.
+          </p>
+          <h4 class="text-lg md:text-2xl font-bold mt-4">See more
+            <span class="text-yellow-500 -mb-2 fill-current inline-block">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"/></svg>
+            </span>
+          </h4>
+        </article>        
+        <article class="w-5/12 px-0 md:px-4 mx-2 mb-16">
+          <svg class="text-green-500 fill-current w-2/5 sm:w-1/3" viewBox="0 0 24 24"><path class="heroicon-ui" d="M19 10v6a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2c0-1.1.9-2 2-2v-6a2 2 0 0 1-2-2V7a1 1 0 0 1 .55-.9l8-4a1 1 0 0 1 .9 0l8 4A1 1 0 0 1 21 7v1a2 2 0 0 1-2 2zm-6 0h-2v6h2v-6zm4 0h-2v6h2v-6zm-8 0H7v6h2v-6zM5 7.62V8h14v-.38l-7-3.5-7 3.5zM5 18v2h14v-2H5z"/></svg>
+          <h3 class="text-2xl md:text-3xl font-bold" >Marketing</h3>
+          <p class="font-normal text-base md:text-lg">
+            Define the major communication themes and structure the rollout of key messages throughout the available touch points.
+          </p>
+          <h4 class="text-lg md:text-2xl font-bold mt-4">See more
+            <span class="text-yellow-500 -mb-2 fill-current inline-block">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"/></svg>
+            </span>
+          </h4>
+        </article>
+        <article class="w-5/12 px-0 md:px-4 mx-2 mb-16">
+          <svg class="text-red-500 fill-current w-2/5 sm:w-1/3" viewBox="0 0 24 24"><path class="heroicon-ui" d="M19 10v6a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2c0-1.1.9-2 2-2v-6a2 2 0 0 1-2-2V7a1 1 0 0 1 .55-.9l8-4a1 1 0 0 1 .9 0l8 4A1 1 0 0 1 21 7v1a2 2 0 0 1-2 2zm-6 0h-2v6h2v-6zm4 0h-2v6h2v-6zm-8 0H7v6h2v-6zM5 7.62V8h14v-.38l-7-3.5-7 3.5zM5 18v2h14v-2H5z"/></svg>
+          <h3 class="text-2xl md:text-3xl font-bold">Transformation</h3>
+          <p class="font-normal text-base md:text-lg">
+            Develop the capabilities, resources and processes so you can compete and thrive in the digital world.
+          </p>
+          <h4 class="text-lg md:text-2xl font-bold mt-4">See more
+            <span class="text-yellow-500 -mb-2 fill-current inline-block">
+              <svg viewBox="0 0 24 24" width="24" height="24"><path d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"/></svg>
+            </span>
+          </h4>
+        </article>        
+      </div>
+    </div>
+  </div>
+
+  <!--Page five / The IQ way-->
+  <div class="my-24">
+    <div class="mx-auto lg:mx-10 md:p-0 flex flex-col lg:flex-row md:items-stretch bg-purple-700 lg:rounded-lg">
+      <!-- left Col Imagen -->
+      <div class="w-full lg:w-1/2 static lg:relative bg-white lg:bg-purple-700  lg:rounded-l-lg">
+        <img class="lg:absolute bottom-0 w-full " src="/images/cohete.png" alt="">
+      </div>
+      <!-- Right Col Texto -->
+      <div class="text-white w-full lg:w-1/2 text-left lg:text-right px-4 mb-16 md:my-4 lg:my-16 lg:pr-24 lg:pl-16 purpura" >
+        <h1 class="my-4 text-5xl md:text-7xl font-bold leading-tight">
+          The IQ way
+        </h1>
+        <p class="leading-normal text-base md:text-xl mb-8 tracking-normal">
+          Being close to our partners enables us to understand their frustrations and aspirations better. That’s the key component in the chemistry that breeds great results. In order to integrate better with your company our work is based on 4 key principles.
+        </p>
+        <button class="hidden md:inline mx-auto text-2xl bg-transparent font-bold border-white border-2 py-2 px-6">GET TO KNOW US A LITTLE BIT BETTER</button>
+        <button class="inline md:hidden w-full text-2xl bg-transparent font-bold border-white border-2 py-2 px-6">KNOW MORE</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
